@@ -1,4 +1,5 @@
 #include "sort.h"
+
 /**
 * partition_hoare - Lomuto partition scheme for quicksort algorithm
 * @a: Array to sort
@@ -6,7 +7,6 @@
 * @h: highest index of array
 * Return: index of pivot
 */
-
 int partition_hoare(int *a, int l, int h)
 {
 	int p, li, hi, temp;
@@ -36,13 +36,13 @@ int partition_hoare(int *a, int l, int h)
 	a[hi] = temp;
 	return (hi);
 }
+
 /**
  * qsh - helper function for quicksort recursion
  * @a: array of int to sort
  * @l: lowest index
  * @h: highest index
  */
-
 void qsh(int *a, int l, int h)
 {
 	int p;
@@ -55,12 +55,12 @@ void qsh(int *a, int l, int h)
 	}
 }
 
+
 /**
  * quick_sort_hoare - sort an array with the Qicksort algorithm
  * @array: array of int to sort
  * @size: Size of the array
  */
-
 void quick_sort_hoare(int *array, size_t size)
 {
 	if (array == NULL || size < 2)
